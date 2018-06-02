@@ -1,10 +1,12 @@
 package com.ran.finalproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -50,5 +52,10 @@ public class SettingsActivity extends AppCompatActivity implements SeekBar.OnSee
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
 
+    }
+
+
+    public void reback(View view) {
+        finish();
     }
 }
